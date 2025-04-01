@@ -1,0 +1,12 @@
+<body>
+    검색어입력: <input type="text" name="search">
+    <script>
+        const input = document.querySelector('[name=search]');
+        input.addEventListener('focus', (event) => {
+            let search = event.target.value;
+            if(search ==='') {
+                event.target.value = '#';
+            }
+        }); 
+    </script>
+</body>
